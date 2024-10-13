@@ -35,10 +35,6 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.grbContent = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picMinimize = new System.Windows.Forms.PictureBox();
-            this.picState = new System.Windows.Forms.PictureBox();
-            this.picExit = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,9 +42,9 @@
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.danhMụcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loạiPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loaiPhongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dichVuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tácVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thuêPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trảPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,12 +58,16 @@
             this.phiênBảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bảnQuyềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liênHệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picMinimize = new System.Windows.Forms.PictureBox();
+            this.picState = new System.Windows.Forms.PictureBox();
+            this.picExit = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picState)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -129,56 +129,6 @@
             this.grbContent.TabIndex = 1;
             this.grbContent.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Image = global::QuanLyPhongTro.Properties.Resources.logo_cong_ty_xay_dung_16_15867847261;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picMinimize
-            // 
-            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMinimize.Image = global::QuanLyPhongTro.Properties.Resources._786364;
-            this.picMinimize.Location = new System.Drawing.Point(706, 10);
-            this.picMinimize.Name = "picMinimize";
-            this.picMinimize.Size = new System.Drawing.Size(20, 20);
-            this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMinimize.TabIndex = 1;
-            this.picMinimize.TabStop = false;
-            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
-            // 
-            // picState
-            // 
-            this.picState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picState.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picState.Image = global::QuanLyPhongTro.Properties.Resources.images;
-            this.picState.Location = new System.Drawing.Point(734, 10);
-            this.picState.Name = "picState";
-            this.picState.Size = new System.Drawing.Size(20, 20);
-            this.picState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picState.TabIndex = 2;
-            this.picState.TabStop = false;
-            this.picState.Click += new System.EventHandler(this.picState_Click);
-            // 
-            // picExit
-            // 
-            this.picExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picExit.Image = global::QuanLyPhongTro.Properties.Resources.close_icon_16;
-            this.picExit.Location = new System.Drawing.Point(761, 10);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(20, 20);
-            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picExit.TabIndex = 3;
-            this.picExit.TabStop = false;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -231,30 +181,31 @@
             // danhMụcToolStripMenuItem1
             // 
             this.danhMụcToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loạiPhòngToolStripMenuItem,
-            this.phòngToolStripMenuItem,
-            this.dịchVụToolStripMenuItem});
+            this.loaiPhongToolStripMenuItem,
+            this.phongToolStripMenuItem,
+            this.dichVuToolStripMenuItem});
             this.danhMụcToolStripMenuItem1.Name = "danhMụcToolStripMenuItem1";
             this.danhMụcToolStripMenuItem1.Size = new System.Drawing.Size(74, 20);
             this.danhMụcToolStripMenuItem1.Text = "Danh mục";
             // 
-            // loạiPhòngToolStripMenuItem
+            // loaiPhongToolStripMenuItem
             // 
-            this.loạiPhòngToolStripMenuItem.Name = "loạiPhòngToolStripMenuItem";
-            this.loạiPhòngToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.loạiPhòngToolStripMenuItem.Text = "Loại phòng";
+            this.loaiPhongToolStripMenuItem.Name = "loaiPhongToolStripMenuItem";
+            this.loaiPhongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loaiPhongToolStripMenuItem.Text = "Loại phòng";
+            this.loaiPhongToolStripMenuItem.Click += new System.EventHandler(this.loaiPhongToolStripMenuItem_Click);
             // 
-            // phòngToolStripMenuItem
+            // phongToolStripMenuItem
             // 
-            this.phòngToolStripMenuItem.Name = "phòngToolStripMenuItem";
-            this.phòngToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.phòngToolStripMenuItem.Text = "Phòng";
+            this.phongToolStripMenuItem.Name = "phongToolStripMenuItem";
+            this.phongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phongToolStripMenuItem.Text = "Phòng";
             // 
-            // dịchVụToolStripMenuItem
+            // dichVuToolStripMenuItem
             // 
-            this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
-            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.dịchVụToolStripMenuItem.Text = "Dịch vụ";
+            this.dichVuToolStripMenuItem.Name = "dichVuToolStripMenuItem";
+            this.dichVuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dichVuToolStripMenuItem.Text = "Dịch vụ";
             // 
             // tácVụToolStripMenuItem
             // 
@@ -347,6 +298,56 @@
             this.liênHệToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.liênHệToolStripMenuItem.Text = "Liên hệ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::QuanLyPhongTro.Properties.Resources.logo_cong_ty_xay_dung_16_15867847261;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMinimize.Image = global::QuanLyPhongTro.Properties.Resources._786364;
+            this.picMinimize.Location = new System.Drawing.Point(706, 10);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.Size = new System.Drawing.Size(20, 20);
+            this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMinimize.TabIndex = 1;
+            this.picMinimize.TabStop = false;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
+            // picState
+            // 
+            this.picState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picState.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picState.Image = global::QuanLyPhongTro.Properties.Resources.images;
+            this.picState.Location = new System.Drawing.Point(734, 10);
+            this.picState.Name = "picState";
+            this.picState.Size = new System.Drawing.Size(20, 20);
+            this.picState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picState.TabIndex = 2;
+            this.picState.TabStop = false;
+            this.picState.Click += new System.EventHandler(this.picState_Click);
+            // 
+            // picExit
+            // 
+            this.picExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picExit.Image = global::QuanLyPhongTro.Properties.Resources.close_icon_16;
+            this.picExit.Location = new System.Drawing.Point(761, 10);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(20, 20);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExit.TabIndex = 3;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,12 +368,12 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picState)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,9 +398,9 @@
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem danhMụcToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem loạiPhòngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phòngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dịchVụToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loaiPhongToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phongToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dichVuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tácVụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thuêPhòngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trảPhòngToolStripMenuItem;

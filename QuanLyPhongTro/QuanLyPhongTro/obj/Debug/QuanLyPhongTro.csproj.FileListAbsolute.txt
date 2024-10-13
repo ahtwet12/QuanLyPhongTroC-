@@ -9,3 +9,4 @@ D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.cs
 D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.exe
 D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.pdb
 D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.ChildForm.frmWelcome.resources
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.ChildForm.fmLoaiPhong.resources

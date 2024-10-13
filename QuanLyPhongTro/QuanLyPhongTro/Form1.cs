@@ -81,5 +81,11 @@ namespace QuanLyPhongTro
             var f = new frmWelcome();
             AddForm(f);
         }
+        //trang loại phòng
+        private void loaiPhongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new fmLoaiPhong();
+            AddForm(f);
+        }
     }
 }

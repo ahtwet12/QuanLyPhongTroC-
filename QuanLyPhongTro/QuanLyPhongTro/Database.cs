@@ -11,7 +11,8 @@ namespace QuanLyPhongTro
 {
     internal class Database
     {
-        private string connectionString = @"Server=myServerAddress;Database=QLPhongTro;Trusted_Connection=True;";
+        // server : cop bên phía sql server
+        private string connectionString = @"Server=DESKTOP-FOORN5L\SQLEXPRESS;Database=QLPhongTro;Trusted_Connection=True;";
         private SqlConnection conn;
         private DataTable dt;
         private SqlCommand cmd;
@@ -28,17 +29,21 @@ namespace QuanLyPhongTro
             }
         }
 
-        public DataTable SelectData(string sql, List<CustomParameter> lstPara)
+        public DataTable SelectData(string sql, List<CustomParameter> lstPara = null)
         {
             try
             {
                 conn.Open();//mo ket noi
                 cmd = new SqlCommand(sql, conn); //ndung sql duoc truyen
                 cmd.CommandType = CommandType.StoredProcedure;
-                foreach(var para in lstPara)//gan cac tham so cho cmd
+                if(lstPara != null)
                 {
-                    cmd.Parameters.AddWithValue(para.key, para.value);
+                    foreach (var para in lstPara)//gan cac tham so cho cmd
+                    {
+                        cmd.Parameters.AddWithValue(para.key, para.value);
+                    }
                 }
+                
                 dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 return dt;
@@ -54,7 +59,7 @@ namespace QuanLyPhongTro
             }
         }
 
-        public int ExeCute(string sql, List<CustomParameter> lstPara)
+        public int ExeCute(string sql, List<CustomParameter> lstPara = null)
         {
             try
             {
