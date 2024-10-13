@@ -1,0 +1,11 @@
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\bin\Debug\QuanLyPhongTro.exe.config
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\bin\Debug\QuanLyPhongTro.exe
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\bin\Debug\QuanLyPhongTro.pdb
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.csproj.AssemblyReference.cache
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.FormMain.resources
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.Properties.Resources.resources
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.csproj.GenerateResource.cache
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.csproj.CoreCompileInputs.cache
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.exe
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.pdb
+D:\DoAn_QuanlyPhongTro\QuanLyPhongTro\QuanLyPhongTro\obj\Debug\QuanLyPhongTro.ChildForm.frmWelcome.resources
